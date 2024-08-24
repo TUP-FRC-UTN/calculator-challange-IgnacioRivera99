@@ -1,0 +1,9 @@
+<div>
+  <label for="valor1">Valor 1</label> <br>
+  <input type="number" name="valor1" [(ngModel)]="number1"> <br>
+  <label for="valor2"> Valor 2</label> <br>
+  <input type="number" name="valor2" [(ngModel)]="number2"> <br>
+  <label for="resultado"> Valor 3</label> <br>
+  <input type="number" name="resultado" disabled [(ngModel)]="result">
+  <app-calculator [number1]="number1" [number2]="number2" (result)="setResult($event)" (clear)="clear()"></app-calculator>
+</div>
