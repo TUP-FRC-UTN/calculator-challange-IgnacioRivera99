@@ -26,6 +26,9 @@ export class CalculatorComponent {
   pot(){
     this.result.emit(Math.pow(this.number1, this.number2));
   }
+  sq(){
+    this.result.emit(Math.pow(this.number1, (1/this.number2)))
+  }
   div(){
     if(this.number2 > 0){
       this.result.emit(this.number1 / this.number2);
